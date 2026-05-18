@@ -15,14 +15,14 @@ import { AppProvider } from '@/context/AppContext';
 SplashScreen.preventAutoHideAsync();
 
 function RootNavigator() {
-  const { session, loading } = useAuth();
+  // const { session, loading } = useAuth();
 
-  useEffect(() => {
-    if (!loading) {
-      if (session) router.replace('/(tabs)');
-      else router.replace('/(auth)/login');
-    }
-  }, [session, loading]);
+  // useEffect(() => {
+  //   if (!loading) {
+  //     if (session) router.replace('/(tabs)');
+  //     else router.replace('/(auth)/login');
+  //   }
+  // }, [session, loading]);
 
   return (
     <Stack screenOptions={{ headerShown: false }}>
